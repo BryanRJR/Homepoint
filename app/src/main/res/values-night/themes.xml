@@ -12,5 +12,21 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+
+    <style name="TextRegular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="HomePointEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontWeight">600</item>
+        <item name="android:paddingStart">@dimen/dp_22</item>
+        <item name="android:paddingEnd">@dimen/dp_22</item>
+        <item name="android:paddingTop">@dimen/dp_32</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
     </style>
 </resources>
