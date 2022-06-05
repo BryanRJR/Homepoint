@@ -23,7 +23,7 @@ class HomePointTextInputLayout : TextInputLayout {
         boxStrokeWidth = 0
         boxStrokeWidthFocused = 0
 
-        setHintTextAppearance(R.style.TextLabel)
+        setHintTextAppearance(R.style.TextAppearance_HomePoint_Headline3)
         hintTextColor = ColorStateList.valueOf(Color.parseColor("#6999B8"))
     }
 }

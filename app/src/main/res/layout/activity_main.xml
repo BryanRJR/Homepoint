@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:hint="Tanggal Lahir"
             android:textFontWeight="600"
-            style="@style/HomePointEditText"/>
+            style="@style/Widget.HomePoint.EditText"/>
 
     </com.synrgy.homepoint.utils.HomePointTextInputLayout>
 
