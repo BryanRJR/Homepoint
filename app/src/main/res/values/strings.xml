@@ -2,4 +2,6 @@
     <string name="app_name">Homepoint</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="act_register_text_term_condition"><![CDATA[Dengan mendaftar, Anda menyetujui Syarat & Ketentuan serta Kebijakan Privasi Homepoint]]></string>
+    <string name="syarat_ketentuan"><![CDATA[Syarat & Ketentuan]]></string>
 </resources>
