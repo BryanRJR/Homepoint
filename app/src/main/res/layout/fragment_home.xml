@@ -301,6 +301,9 @@
                 android:layout_marginTop="16dp"
                 android:paddingVertical="16dp"
                 android:paddingStart="90dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/offer_card_item"
                 app:layout_constraintTop_toBottomOf="@id/tv_offer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -326,6 +329,9 @@
                 android:layout_marginTop="16dp"
                 android:paddingVertical="16dp"
                 android:paddingStart="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/offer_card_item"
                 app:layout_constraintTop_toBottomOf="@id/tv_recommendation"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
