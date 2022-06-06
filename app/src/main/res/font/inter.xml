@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <font app:font="@font/inter_light"
+        app:fontStyle="normal"
+        app:fontWeight="300"
+        android:font="@font/inter_light"
+        android:fontStyle="normal"
+        android:fontWeight="300" />
+
     <font app:font="@font/inter_regular"
         app:fontStyle="normal"
         app:fontWeight="400"

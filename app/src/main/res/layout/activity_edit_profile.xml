@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_edit_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profil"
+        android:textSize="16sp"
+        android:textFontWeight="600"
+        android:textColor="@color/black"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_info_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info Profil"
+        android:textFontWeight="600"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_edit_profil"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.synrgy.homepoint.utils.HomePointTextInputLayout
+        android:id="@+id/til_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_profil"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:hint="Nama Lengkap"
+            android:textFontWeight="600"
+            style="@style/Widget.HomePoint.EditText"/>
+
+    </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+    <com.synrgy.homepoint.utils.HomePointTextInputLayout
+        android:id="@+id/til_birth_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/til_full_name"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:hint="Tanggal Lahir"
+            android:textFontWeight="600"
+            style="@style/Widget.HomePoint.EditText"/>
+
+    </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textFontWeight="600"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_birth_date"/>
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        android:checkedButton="@id/rb_female"
+        app:layout_constraintTop_toBottomOf="@id/tv_gender">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textFontWeight="300"
+            android:paddingStart="8dp"
+            android:button="@drawable/ic_btn_radio" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:textFontWeight="300"
+            android:text="Laki - laki"
+            android:paddingStart="8dp"
+            android:button="@drawable/ic_btn_radio"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/iv_contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info Kontak"
+        android:textSize="16sp"
+        android:textFontWeight="600"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rg_gender"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.synrgy.homepoint.utils.HomePointTextInputLayout
+        android:id="@+id/til_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_contact_info"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:hint="Email"
+            android:textFontWeight="600"
+            style="@style/Widget.HomePoint.EditText"/>
+
+    </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+    <com.synrgy.homepoint.utils.HomePointTextInputLayout
+        android:id="@+id/til_contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/til_email"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:hint="Nomor Hp"
+            android:textFontWeight="600"
+            style="@style/Widget.HomePoint.EditText"/>
+
+    </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:textFontWeight="600"
+        android:foreground="?selectableItemBackground"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="51dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_btn_yellow"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
