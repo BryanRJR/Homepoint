@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_chat.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable/bg_home.xml" value="0.1155" />
+        <entry key="app/src/main/res/drawable/bg_home_blue.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable/bg_search.xml" value="0.18809368896484374" />
         <entry key="app/src/main/res/drawable/ic_bottom_home.xml" value="0.10444793701171873" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1085" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23479102522004636" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2984115600585938" />
+        <entry key="app/src/main/res/drawable/ic_whatsapp.xml" value="0.1585" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27876685529817136" />
+        <entry key="app/src/main/res/layout/banner_item.xml" value="0.234375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17930755615234373" />
+        <entry key="app/src/main/res/layout/offer_card_item.xml" value="0.2850143432617188" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.1203125" />
       </map>
     </option>

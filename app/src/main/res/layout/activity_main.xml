@@ -20,6 +20,8 @@
         android:id="@+id/bnv_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemTextAppearanceActive="@style/Widget.BottomNavigationView"
+        app:itemTextAppearanceInactive="@style/Widget.BottomNavigationView"
         app:itemIconTint="@color/bottom_nav_selected_color"
         app:itemTextColor="@color/bottom_nav_selected_color"
         app:layout_constraintStart_toStartOf="parent"
