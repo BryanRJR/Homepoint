@@ -36,4 +36,21 @@
         <item name="endIconDrawable">@drawable/ic_dropdown</item>
         <item name="endIconTint">#252525</item>
     </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="HomePointEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">@dimen/dp_16</item>
+        <item name="android:paddingEnd">@dimen/dp_16</item>
+        <item name="android:paddingTop">@dimen/dp_24</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
 </resources>
