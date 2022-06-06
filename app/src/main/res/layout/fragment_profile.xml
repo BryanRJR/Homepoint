@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Profile"
+        android:background="#6999B8"
+        app:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="17dp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_profile"
+        app:layout_constraintEnd_toStartOf="@id/tv_change_profile"/>
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Telepon"
+        android:textColor="#505050"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_change_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah profil"
+        android:layout_marginEnd="15dp"
+        android:textColor="#316093"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="14dp"
+        android:paddingStart="16dp"
+        android:paddingVertical="14dp"
+        android:paddingEnd="16dp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_number" />
+
+    <TextView
+        android:id="@+id/tv_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubah Kata Sandi"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingVertical="14dp"
+        android:paddingEnd="16dp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kebijakan layanan &amp; privasi"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingVertical="14dp"
+        android:paddingEnd="16dp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_change_password" />
+
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bantuan"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="14dp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_policy" />
+
+    <TextView
+        android:id="@+id/tv_chat_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat admin"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingVertical="14dp"
+        android:paddingEnd="16dp"
+        android:textColor="#505050"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_help" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingVertical="14dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="16dp"
+        android:textColor="#505050"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawablePadding="14dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_chat_admin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
