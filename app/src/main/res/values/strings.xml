@@ -2,5 +2,10 @@
     <string name="app_name">Homepoint</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ic_bottom_home_1">Beranda</string>
+    <string name="ic_bottom_home_2">Wishlist</string>
+    <string name="ic_bottom_home_3">Scan</string>
+    <string name="ic_bottom_home_4">Pesanan</string>
+    <string name="ic_bottom_home_5">Profile</string>
     <string name="act_register_text_term_condition">Dengan mendaftar, Anda menyetujui Syarat &amp; Ketentuan serta Kebijakan Privasi Homepoint</string>
 </resources>

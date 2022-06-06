@@ -1,60 +1,65 @@
 package com.synrgy.homepoint.ui.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewbinding.ViewBinding
+import androidx.viewpager2.widget.ViewPager2
 import com.synrgy.homepoint.R
+import com.synrgy.homepoint.data.local.model.OfferProduct
+import com.synrgy.homepoint.data.local.model.RecommendationProduct
+import com.synrgy.homepoint.databinding.FragmentHomeBinding
+import com.synrgy.homepoint.ui.BaseFragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class HomeFragment : BaseFragment<FragmentHomeBinding>(){
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var offerAdapter: OfferAdapter
+    private var listOfferProduct: ArrayList<OfferProduct> = arrayListOf()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    private lateinit var recommendationAdapter: RecommendationAdapter
+    private var listRecommendationProduct: ArrayList<RecommendationProduct> = arrayListOf()
+
+    override val bindingInflater: (LayoutInflater) -> ViewBinding
+        get() = FragmentHomeBinding::inflate
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initViewPager()
+        setupRecyclerViewOffer()
+        setupRecyclerViewRecommendation()
+    }
+
+    private fun initViewPager(){
+        val ivBanner = listOf(
+            R.drawable.img_banner_1,
+            R.drawable.img_banner_2,
+            R.drawable.img_banner_3,
+        )
+
+        binding.pagerSlider.adapter = ViewPagerAdapter(ivBanner)
+        binding.pagerSlider.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        binding.pagerSlider.currentItem = 0
+        binding.pagerSlider.offscreenPageLimit = 2
+    }
+
+    private fun setupRecyclerViewOffer(){
+        listOfferProduct.addAll(DataSource.listOfferProduct)
+        offerAdapter = OfferAdapter(listOfferProduct)
+        binding.rvOffer.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = offerAdapter
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun setupRecyclerViewRecommendation(){
+        listRecommendationProduct.addAll(DataSource.listRecommendationProduct)
+        recommendationAdapter = RecommendationAdapter(listRecommendationProduct)
+        binding.rvRecommendation.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = recommendationAdapter
+        }
     }
 }
