@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityLoginBinding
-import com.synrgy.homepoint.databinding.ActivityRegisterBinding
 import com.synrgy.homepoint.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {

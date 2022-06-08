@@ -1,64 +1,62 @@
 package com.synrgy.homepoint.ui.register
 
-import android.annotation.SuppressLint
 import android.graphics.Color
-import android.graphics.Typeface.BOLD
-import android.graphics.fonts.Font
-import android.graphics.fonts.FontFamily
-import android.net.LinkAddress
-import android.os.Build
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableString
+import android.text.*
+import android.text.method.LinkMovementMethod
+import android.text.style.ClickableSpan
 import android.text.style.ForegroundColorSpan
-import android.text.style.StyleSpan
-import android.text.style.TypefaceSpan
+import android.view.View
 import android.widget.TextView
-import androidx.annotation.RequiresApi
-import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
 
-    @SuppressLint("NewApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.hide()
-        val foregroundSpan = getString(R.string.act_register_text_term_condition)
 
-        val foregroundSpannableString = SpannableString(foregroundSpan)
-        foregroundSpannableString.setSpan(
-            StyleSpan(BOLD),
-            34,
-            52,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        binding.tvTermCond.makeLinks(
+            Pair("Syarat & Ketentuan", View.OnClickListener {  }),
+            Pair("Kebijakan Privasi", View.OnClickListener {  })
         )
-        foregroundSpannableString.setSpan(
-            StyleSpan(BOLD),
-            59,
-            77,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-        val foregroundSpannableStringTwo = SpannableString(foregroundSpan)
-        foregroundSpannableStringTwo.setSpan(
-            ForegroundColorSpan(getColor(R.color.txt_blue)),
-            34,
-            52,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-        foregroundSpannableStringTwo.setSpan(
-            ForegroundColorSpan(getColor(R.color.txt_blue)),
-            59,
-            77,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-        binding.tvTermCond.text = foregroundSpannableString
-        binding.tvTermCond.text = foregroundSpannableStringTwo
+    }
 
+    private fun TextView.makeLinks(vararg links: Pair<String, View.OnClickListener>) {
+        val linkText = this.text
+        val spannableString = SpannableString(linkText)
+
+        for (link in links) {
+            val clickableSpan = object : ClickableSpan() {
+                override fun onClick(widget: View) {
+                    Selection.setSelection((widget as TextView).text as Spannable, 0)
+                    widget.invalidate()
+                    link.second.onClick(widget)
+                }
+                override fun updateDrawState(ds: TextPaint) {
+                    super.updateDrawState(ds)
+                    ds.isUnderlineText = false
+                    ds.color = Color.parseColor("#316093")
+                    ds.typeface = Typeface.DEFAULT_BOLD
+                }
+            }
+
+            val startIndexOfLink = this.text.toString().indexOf(link.first)
+            spannableString.setSpan(
+                clickableSpan,
+                startIndexOfLink,
+                startIndexOfLink + link.first.length,
+                Spanned.SPAN_EXCLUSIVE_INCLUSIVE
+            )
+
+        }
+
+        this.movementMethod = LinkMovementMethod.getInstance()
+        this.setText(spannableString, TextView.BufferType.SPANNABLE)
     }
 
 }
