@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_border_bottom.xml" value="0.1045" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_btn_yellow.xml" value="0.1045" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_card_address.xml" value="0.1035" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_card_selected_address.xml" value="0.1035" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_edit_text.xml" value="0.1045" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_et_released.xml" value="0.1045" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/bg_et_selected.xml" value="0.1045" />
@@ -14,19 +16,23 @@
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_arrow_up.xml" value="0.1675" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_btn_radio_off.xml" value="0.1045" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_btn_radio_on.xml" value="0.1045" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_check_box.xml" value="0.1035" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_circle.xml" value="0.1045" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_dropdown.xml" value="0.1675" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_eye_solid.xml" value="0.1035" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/drawable/ic_homepoint.xml" value="0.1925" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/font/inter.xml" value="0.121875" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_add_address.xml" value="0.25" />
-        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_address.xml" value="0.1" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_address.xml" value="0.2996632996632997" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_edit_profile.xml" value="0.1308876811594203" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_register.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/fragment_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/fragment_home.xml" value="0.20090293453724606" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/item_address.xml" value="0.40083217753120665" />
+        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/item_dropdown.xml" value="0.25" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable-v24/bg_btn_google.xml" value="0.1" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable-v24/btn_default.xml" value="0.1025" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable-v24/button_background.xml" value="0.2045" />
@@ -40,24 +46,10 @@
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_login.xml" value="0.17" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_main.xml" value="0.16842105263157894" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_register.xml" value="0.1" />
-        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
-        <entry key="..\:/Users/PrivCom/Desktop/Android Exercise/Final Project/homepoint/app/src/main/res/layout/item_dropdown.xml" value="0.25" />
-        <entry key="app/src/main/res/drawable/bg_chat.xml" value="0.1585" />
-        <entry key="app/src/main/res/drawable/bg_home.xml" value="0.1155" />
-        <entry key="app/src/main/res/drawable/bg_home_blue.xml" value="0.1585" />
-        <entry key="app/src/main/res/drawable/bg_search.xml" value="0.18809368896484374" />
-        <entry key="app/src/main/res/drawable/ic_bottom_home.xml" value="0.10444793701171873" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1085" />
-        <entry key="app/src/main/res/drawable/ic_whatsapp.xml" value="0.1585" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27876685529817136" />
-        <entry key="app/src/main/res/layout/banner_item.xml" value="0.234375" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3178314208984375" />
-        <entry key="app/src/main/res/layout/offer_card_item.xml" value="0.2850143432617188" />
-        <entry key="app/src/main/res/menu/menu_main.xml" value="0.1203125" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
