@@ -58,4 +58,8 @@
         <item name="android:textSize">11sp</item>
     </style>
 
+    <style name="ToolbarColoredBackArrow" parent="Theme.Homepoint">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
 </resources>
