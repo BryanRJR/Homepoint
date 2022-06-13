@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAddressActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_edit_profil"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Edit Profil"
+        android:textSize="16sp"
+        android:textFontWeight="600"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_edit_profil"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/til_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginHorizontal="16dp"
+                style="@style/Widget.HomePoint.ExposedDropdownMenu"
+                app:layout_constraintTop_toBottomOf="@id/tv_edit_profil">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Provinsi"
+                    android:textFontWeight="600"
+                    android:inputType="textAutoComplete"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/til_city_regency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                style="@style/Widget.HomePoint.ExposedDropdownMenu"
+                app:layout_constraintTop_toBottomOf="@id/til_province">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Kabupaten/Kota"
+                    android:textFontWeight="600"
+                    android:inputType="textAutoComplete"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/til_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                style="@style/Widget.HomePoint.ExposedDropdownMenu"
+                app:layout_constraintTop_toBottomOf="@id/til_city_regency">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Kecamatan"
+                    android:textFontWeight="600"
+                    android:inputType="textAutoComplete"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/til_sub_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                style="@style/Widget.HomePoint.ExposedDropdownMenu"
+                app:layout_constraintTop_toBottomOf="@id/til_district">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Kelurahan"
+                    android:textFontWeight="600"
+                    android:inputType="textAutoComplete"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/til_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                style="@style/Widget.HomePoint.ExposedDropdownMenu"
+                app:layout_constraintTop_toBottomOf="@id/til_sub_district">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Kode Pos"
+                    android:textFontWeight="600"
+                    android:inputType="textAutoComplete"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/til_complete_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:layout_constraintTop_toBottomOf="@id/til_postal_code">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Alamat Lengkap"
+                    android:textFontWeight="600"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_recipient_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informasi Penerima"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@id/til_complete_address" />
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/tv_recipient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_recipient_information">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Nama Penerima"
+                    android:textFontWeight="600"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                android:id="@+id/tv_recipient_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_recipient_name">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="No HP Penerima"
+                    android:textFontWeight="600"
+                    style="@style/Widget.HomePoint.EditText"/>
+
+            </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Jadikan Alamat Utama"
+                android:layout_marginStart="@dimen/dp_16"
+                style="@style/Widget.HomePoint.Checkbox"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textFontWeight="600"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/bg_btn_yellow"
+                android:layout_marginBottom="41dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginHorizontal="@dimen/dp_16"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

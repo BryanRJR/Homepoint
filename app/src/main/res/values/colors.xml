@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#316093</color>
+    <color name="secondary">#FBC646</color>
+    <color name="variant_1">#22364A</color>
+    <color name="variant_2">#6999B8</color>
+    <color name="variant_3">#98B6C9</color>
+    <color name="light_bg">#F5F6F8</color>
+    <color name="blue_bg">#C7EEEA</color>
+    <color name="text_black">#252525</color>
+    <color name="text_medium_1">#505050</color>
+    <color name="text_medium_2">#B5B5B5</color>
+    <color name="text_disabled">#E1E1E1</color>
+    <color name="red_error">#EF0909</color>
+    <color name="field_disabled">#F7F7F7</color>
+    <color name="act_login_btn_background">#FBC646</color>
+    <color name="txt_blue">#316093</color>
 </resources>
