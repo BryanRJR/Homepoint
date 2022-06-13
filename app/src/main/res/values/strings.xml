@@ -8,4 +8,22 @@
     <string name="ic_bottom_home_4">Pesanan</string>
     <string name="ic_bottom_home_5">Profile</string>
     <string name="act_register_text_term_condition">Dengan mendaftar, Anda menyetujui Syarat &amp; Ketentuan serta Kebijakan Privasi Homepoint</string>
+    <string name="act_register_daftar_akun">Daftar Akun</string>
+    <string name="act_register_hint_name">Nama Lengkap</string>
+    <string name="act_register_hint_email">Email/No.Hp</string>
+    <string name="act_register_hint_password">Kata Sandi</string>
+    <string name="act_register_txt_btn_daftar">Daftar</string>
+    <string name="act_register_desc_masuk_dengan">Atau masuk dengan</string>
+    <string name="act_register_txt_btn_google">Akun Google</string>
+    <string name="act_register_desc_masuk">Sudah memiliki akun?</string>
+    <string name="act_register_txt_btn_masuk">Masuk</string>
+    <string name="act_login_txt_title_masuk">Masuk Akun</string>
+    <string name="act_login_hint_email">Email/No.Hp</string>
+    <string name="act_login_hint_password">Kata Sandi</string>
+    <string name="act_login_tv_forget_password">Lupa kata sandi?</string>
+    <string name="act_login_txt_btn_masuk">Masuk</string>
+    <string name="act_login_desc_masuk_dengan">Atau masuk dengan</string>
+    <string name="act_login_txt_btn_google">Akun Google</string>
+    <string name="act_login_desc_no_account">Belum memiliki akun?</string>
+    <string name="act_login_txt_daftar">Daftar</string>
 </resources>
