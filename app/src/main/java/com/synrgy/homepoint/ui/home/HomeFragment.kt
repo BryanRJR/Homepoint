@@ -1,5 +1,6 @@
 package com.synrgy.homepoint.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.synrgy.homepoint.data.local.model.OfferProduct
 import com.synrgy.homepoint.data.local.model.RecommendationProduct
 import com.synrgy.homepoint.databinding.FragmentHomeBinding
 import com.synrgy.homepoint.ui.BaseFragment
+import com.synrgy.homepoint.ui.detail.ProductDetailActivity
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(){
 
@@ -28,6 +30,14 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(){
         initViewPager()
         setupRecyclerViewOffer()
         setupRecyclerViewRecommendation()
+        toDetail()
+    }
+
+    private fun toDetail(){
+        binding.ivToDetail.setOnClickListener {
+            val intent = Intent(context, ProductDetailActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initViewPager(){

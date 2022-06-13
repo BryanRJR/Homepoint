@@ -58,4 +58,19 @@
         <item name="android:textSize">11sp</item>
     </style>
 
+    <style name="Widget.HomePoint.Checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ic_check_box</item>
+        <item name="android:paddingStart">12dp</item>
+    </style>
+
+    <style name="Widget.HomePoint.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textFontWeight" tools:targetApi="p">300</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:button">@drawable/ic_btn_radio</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="Theme.Homepoint">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
 </resources>
