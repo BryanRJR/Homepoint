@@ -26,4 +26,5 @@
     <string name="act_login_txt_btn_google">Akun Google</string>
     <string name="act_login_desc_no_account">Belum memiliki akun?</string>
     <string name="act_login_txt_daftar">Daftar</string>
+    <string name="act_forget_pass_desc">Kami akan mengirimkan kata sandi baru ke alamat emailmu. Masukkan alamat email yang terdaftar dalam applikasi</string>
 </resources>

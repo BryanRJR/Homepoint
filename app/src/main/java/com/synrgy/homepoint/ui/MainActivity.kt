@@ -3,6 +3,7 @@ package com.synrgy.homepoint.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.synrgy.homepoint.ProfileFragment
 import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityMainBinding
 import com.synrgy.homepoint.ui.home.HomeFragment
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
             when(item.itemId){
                 R.id.menu_main_home -> {
                     replaceFragment(HomeFragment())
+                    true
+                }
+                R.id.menu_main_profile -> {
+                    replaceFragment(ProfileFragment())
                     true
                 }
                 else -> false

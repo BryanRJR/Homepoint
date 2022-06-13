@@ -1,5 +1,6 @@
 package com.synrgy.homepoint.ui.register
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +11,9 @@ import android.text.style.ClickableSpan
 import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import com.synrgy.homepoint.databinding.ActivityRegisterBinding
+import com.synrgy.homepoint.ui.login.LoginActivity
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -20,9 +23,21 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnDaftar.setOnClickListener {
+            Toast.makeText(this, "Menu Belum Tersedia", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.tvBtnToLogin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
         binding.tvTermCond.makeLinks(
-            Pair("Syarat & Ketentuan", View.OnClickListener {  }),
-            Pair("Kebijakan Privasi", View.OnClickListener {  })
+            Pair("Syarat & Ketentuan", View.OnClickListener {
+                Toast.makeText(this, "Menu Belum Tersedia", Toast.LENGTH_SHORT).show()
+            }),
+            Pair("Kebijakan Privasi", View.OnClickListener {
+                Toast.makeText(this, "Menu Belum Tersedia", Toast.LENGTH_SHORT).show()
+            })
         )
     }
 
