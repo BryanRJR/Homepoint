@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:ellipsize="end"
-    android:maxLines="1"
-    android:layout_marginHorizontal="16dp"
-    android:background="@drawable/bg_border_bottom"
-    android:textAppearance="?attr/textAppearanceSubtitle1" />
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/woohoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/bg_border_bottom"/>
+
+</LinearLayout>

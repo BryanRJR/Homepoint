@@ -110,19 +110,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Perempuan"
-            android:textFontWeight="300"
-            android:paddingStart="8dp"
-            android:button="@drawable/ic_btn_radio" />
+            style="@style/Widget.HomePoint.RadioButton" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/rb_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            android:textFontWeight="300"
             android:text="Laki - laki"
-            android:paddingStart="8dp"
-            android:button="@drawable/ic_btn_radio"/>
+            style="@style/Widget.HomePoint.RadioButton"/>
 
     </RadioGroup>
 
