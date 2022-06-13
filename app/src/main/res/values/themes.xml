@@ -69,4 +69,8 @@
         <item name="android:button">@drawable/ic_btn_radio</item>
     </style>
 
+    <style name="ToolbarColoredBackArrow" parent="Theme.Homepoint">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
 </resources>

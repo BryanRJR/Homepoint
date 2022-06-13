@@ -13,6 +13,9 @@
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.detail.ProductDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddAddressActivity"
             android:exported="true"/>
         <activity

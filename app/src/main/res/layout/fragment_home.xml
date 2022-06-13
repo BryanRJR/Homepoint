@@ -240,6 +240,7 @@
                     android:weightSum="2">
 
                     <ImageView
+                        android:id="@+id/iv_to_detail"
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
