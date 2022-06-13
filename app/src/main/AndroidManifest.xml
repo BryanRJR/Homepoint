@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homepoint">
         <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddAddressActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
