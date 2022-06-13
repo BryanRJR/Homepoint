@@ -8,6 +8,24 @@
     <string name="ic_bottom_home_4">Pesanan</string>
     <string name="ic_bottom_home_5">Profile</string>
     <string name="act_register_text_term_condition">Dengan mendaftar, Anda menyetujui Syarat &amp; Ketentuan serta Kebijakan Privasi Homepoint</string>
+    <string name="act_register_daftar_akun">Daftar Akun</string>
+    <string name="act_register_hint_name">Nama Lengkap</string>
+    <string name="act_register_hint_email">Email/No.Hp</string>
+    <string name="act_register_hint_password">Kata Sandi</string>
+    <string name="act_register_txt_btn_daftar">Daftar</string>
+    <string name="act_register_desc_masuk_dengan">Atau masuk dengan</string>
+    <string name="act_register_txt_btn_google">Akun Google</string>
+    <string name="act_register_desc_masuk">Sudah memiliki akun?</string>
+    <string name="act_register_txt_btn_masuk">Masuk</string>
+    <string name="act_login_txt_title_masuk">Masuk Akun</string>
+    <string name="act_login_hint_email">Email/No.Hp</string>
+    <string name="act_login_hint_password">Kata Sandi</string>
+    <string name="act_login_tv_forget_password">Lupa kata sandi?</string>
+    <string name="act_login_txt_btn_masuk">Masuk</string>
+    <string name="act_login_desc_masuk_dengan">Atau masuk dengan</string>
+    <string name="act_login_txt_btn_google">Akun Google</string>
+    <string name="act_login_desc_no_account">Belum memiliki akun?</string>
+    <string name="act_login_txt_daftar">Daftar</string>
     <string name="txt_price_strike"> <strike>Rp18.000</strike></string>
     <string name="txt_description_product">Kondisi: Baru\nBerat: 1.300 Gram\nBahan : Stainless Steel + PP + TPR\n1 Set terdiri dari:\n- Chef Knife (33cm x 20,5cm)\n- Carving Knife (33cm x 20,5cm)\n- Cleaver Knife (30,5cm x 18cm)\n- Paring Knife (20,5cm x 9,5cm)\n- Peeler\n- Gunting\n\nDiamond knife patent pertama di indonesia, tampilan cantik dan berfungsi memotong apapun lebih tidak akan menempel di pisau.\nLihat selengkapnya</string>
 </resources>

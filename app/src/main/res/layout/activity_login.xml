@@ -49,7 +49,7 @@
                     android:layout_height="36dp"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="Masuk Akun"
+                    android:text="@string/act_login_txt_title_masuk"
                     android:textColor="#22364A"
                     android:textFontWeight="600"
                     android:textSize="26sp"
@@ -70,7 +70,7 @@
                         style="@style/HomePointEditText"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:hint="Email/No.Hp"
+                        android:hint="@string/act_login_hint_email"
                         android:textFontWeight="600" />
 
                 </com.synrgy.homepoint.utils.HomePointTextInputLayout>
@@ -91,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="textPassword"
-                        android:hint="Kata Sandi"
+                        android:hint="@string/act_login_hint_password"
                         android:textFontWeight="600" />
 
                 </com.synrgy.homepoint.utils.HomePointTextInputLayout>
@@ -104,7 +104,7 @@
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="200dp"
                     android:fontFamily="@font/inter_regular"
-                    android:text="Lupa kata sandi?"
+                    android:text="@string/act_login_tv_forget_password"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:textFontWeight="400"
@@ -120,7 +120,7 @@
                     android:layout_margin="24dp"
                     android:background="@drawable/button_background"
                     android:fontFamily="@font/inter_semibold"
-                    android:text="Masuk"
+                    android:text="@string/act_login_txt_btn_masuk"
                     android:textAllCaps="false"
                     android:textColor="#22364A"
                     android:textSize="16sp"
@@ -161,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:fontFamily="@font/inter_regular"
-                        android:text="Atau masuk dengan"
+                        android:text="@string/act_login_desc_masuk_dengan"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
                 </FrameLayout>
@@ -169,13 +169,13 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_login_google"
                     android:layout_width="314dp"
-                    android:layout_height="40dp"
+                    android:layout_height="42dp"
                     android:layout_marginTop="24dp"
                     android:background="@drawable/bg_btn_google"
                     android:drawableLeft="@drawable/ic_google"
                     android:paddingStart="80dp"
                     android:paddingEnd="80dp"
-                    android:text="Akun Google"
+                    android:text="@string/act_login_txt_btn_google"
                     android:textAllCaps="false"
                     android:textColor="#22364A"
                     android:textSize="16sp"
@@ -205,7 +205,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/inter_regular"
-                            android:text="Belum memiliki akun?"
+                            android:text="@string/act_login_desc_no_account"
                             android:textColor="@color/black"
                             android:textFontWeight="400"
                             android:textSize="14sp"
@@ -220,7 +220,7 @@
                             android:clickable="true"
                             android:layout_marginStart="6dp"
                             android:fontFamily="@font/inter_semibold"
-                            android:text="Daftar"
+                            android:text="@string/act_login_txt_daftar"
                             android:textColor="#316093"
                             android:textSize="16sp" />
                     </LinearLayout>
