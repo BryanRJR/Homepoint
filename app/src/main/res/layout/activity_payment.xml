@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAE8F0"
+    tools:context=".ui.payment.PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:fontFamily="@font/inter"
+                    android:text="Kirim ke"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:fontFamily="@font/inter"
+                    android:text="Ganti alamat"
+                    android:textColor="#316093"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="380dp"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_16"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Daftar Pesananmu"
+                    android:textColor="#505050"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ListView
+                    android:layout_width="380dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+                </ListView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="380dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_voucher"
+                    android:drawableEnd="@drawable/ic_arrow_right_payment"
+                    android:fontFamily="@font/inter_regular"
+                    android:paddingStart="@dimen/dp_22"
+                    android:paddingEnd="@dimen/dp_30"
+                    android:text="Tambahkan Voucher Promo"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#22364A"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_layanan_pengiriman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Pilih Layanan Pengiriman"
+                        android:textColor="#505050"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/ic_info"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/ic_iwwa_information" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="99dp"
+                        android:layout_height="104dp"
+                        android:layout_margin="@dimen/dp_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_selector"
+                        android:elevation="4dp"
+                        android:text="Left"
+                        android:textColor="#505050"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="99dp"
+                        android:layout_height="104dp"
+                        android:layout_margin="@dimen/dp_16"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_selector"
+                        android:elevation="4dp"
+                        android:text="Center"
+                        android:textColor="#505050" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="99dp"
+                        android:layout_height="104dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_selector"
+                        android:elevation="4dp"
+                        android:textColor="#505050" />
+                </RadioGroup>
+
+                <com.synrgy.homepoint.utils.HomePointTextInputLayout
+                    android:id="@+id/filled_text_shop_location"
+                    android:layout_width="380dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+                    <EditText
+                        style="@style/HomePointEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Lokasi Toko"
+                        android:textFontWeight="600"
+                        android:textSize="14sp" />
+
+                </com.synrgy.homepoint.utils.HomePointTextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <TextView
+                    android:id="@+id/tv_ringkasan_pengiriman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_margin="@dimen/dp_16"
+                    android:text="Pilih Layanan Pengiriman"
+                    android:textColor="#505050"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

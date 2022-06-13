@@ -28,4 +28,5 @@
     <string name="act_login_txt_daftar">Daftar</string>
     <string name="txt_price_strike"> <strike>Rp18.000</strike></string>
     <string name="txt_description_product">Kondisi: Baru\nBerat: 1.300 Gram\nBahan : Stainless Steel + PP + TPR\n1 Set terdiri dari:\n- Chef Knife (33cm x 20,5cm)\n- Carving Knife (33cm x 20,5cm)\n- Cleaver Knife (30,5cm x 18cm)\n- Paring Knife (20,5cm x 9,5cm)\n- Peeler\n- Gunting\n\nDiamond knife patent pertama di indonesia, tampilan cantik dan berfungsi memotong apapun lebih tidak akan menempel di pisau.\nLihat selengkapnya</string>
+    <string name="act_forget_pass_desc">Kami akan mengirimkan kata sandi baru ke alamat emailmu. Masukkan alamat email yang terdaftar dalam applikasi</string>
 </resources>
