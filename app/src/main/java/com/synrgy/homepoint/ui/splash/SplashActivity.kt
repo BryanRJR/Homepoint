@@ -9,6 +9,7 @@ import android.os.Looper
 import com.synrgy.homepoint.EditProfileActivity
 import com.synrgy.homepoint.R
 import com.synrgy.homepoint.ui.MainActivity
+import com.synrgy.homepoint.ui.login.LoginActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -18,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper())
             .postDelayed({
-                startActivity(Intent(this, EditProfileActivity::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }, SPLASH_TIME_OUT)
     }
