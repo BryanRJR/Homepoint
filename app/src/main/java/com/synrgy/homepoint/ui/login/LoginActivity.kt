@@ -3,10 +3,7 @@ package com.synrgy.homepoint.ui.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityLoginBinding
-import com.synrgy.homepoint.ui.MainActivity
 import com.synrgy.homepoint.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
