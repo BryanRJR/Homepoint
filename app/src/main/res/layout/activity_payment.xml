@@ -7,9 +7,47 @@
     android:background="#DAE8F0"
     tools:context=".ui.payment.PaymentActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_bar_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Pembayaran"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_bar_payment">
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -79,10 +117,10 @@
 
                             <TextView
                                 android:id="@+id/tv_title_address"
-                                android:layout_marginLeft="@dimen/dp_8"
-                                android:layout_marginTop="@dimen/dp_8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:layout_marginTop="@dimen/dp_8"
                                 android:fontFamily="@font/inter_regular"
                                 android:text="Rumah"
                                 android:textColor="#505050"
@@ -137,18 +175,18 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_margin="@dimen/dp_16"
+                        android:orientation="horizontal"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/rv_order_list">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Subtotal"
-                            android:textSize="12sp"
                             android:fontFamily="@font/inter_regular"
+                            android:text="Subtotal"
                             android:textColor="@color/black"
+                            android:textSize="12sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -157,9 +195,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
+                            android:fontFamily="@font/inter_semibold"
                             android:text="Rp 804.000"
                             android:textColor="#316093"
-                            android:fontFamily="@font/inter_semibold"
                             android:textSize="12sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -178,10 +216,10 @@
                         android:id="@+id/btn_voucher"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:clickable="true"
-                        android:layout_marginRight="@dimen/dp_16"
                         android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_16"
                         android:background="@drawable/bg_btn_voucher"
+                        android:clickable="true"
                         android:drawableEnd="@drawable/ic_arrow_right_payment"
                         android:fontFamily="@font/inter_regular"
                         android:paddingStart="@dimen/dp_22"
@@ -240,7 +278,7 @@
                         android:orientation="horizontal"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
                     <com.synrgy.homepoint.utils.HomePointTextInputLayout
                         android:id="@+id/filled_text_shop_location"
