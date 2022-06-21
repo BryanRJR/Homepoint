@@ -3,6 +3,4 @@
     <item android:drawable="@drawable/ic_checked_true" android:state_checked="true" android:state_enabled="true"/>
     <item android:drawable="@drawable/ic_checked_false" android:state_checked="false" android:state_enabled="false"/>
 
-    <item android:drawable="@drawable/ic_checked_false" android:state_checked="true" android:state_enabled="false"/>
-    <item android:drawable="@drawable/ic_checked_false"/>
 </selector>
