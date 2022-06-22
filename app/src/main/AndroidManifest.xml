@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homepoint">
         <activity
+            android:name=".ui.payment.PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
@@ -17,12 +20,12 @@
             android:exported="false" />
         <activity
             android:name=".AddAddressActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ui.login.ForgetPassActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.payment.PaymentActivity"
+            android:name=".ui.payment.ConfirmPaymentActivity"
             android:exported="false" />
         <activity
             android:name=".EditProfileActivity"
