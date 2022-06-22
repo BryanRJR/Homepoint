@@ -15,6 +15,7 @@
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_border_outlineblue.xml" value="0.1" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_border_outlineblue_upload.xml" value="0.1165" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_btn_copy_text.xml" value="0.1165" />
+        <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_btn_gray.xml" value="0.1" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_btn_outlinegray.xml" value="0.129" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_btn_voucher.xml" value="0.129" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/bg_btn_yellow.xml" value="0.129" />
@@ -85,12 +86,12 @@
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/drawable/ic_wishlist.xml" value="0.154" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_address.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_cart.xml" value="0.22" />
-        <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_confirm_payment.xml" value="0.22" />
+        <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_confirm_payment.xml" value="0.25" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_edit_profile.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_forget_pass.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_login.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_main.xml" value="0.16403508771929826" />
-        <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_payment.xml" value="0.16" />
+        <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_payment.xml" value="0.17" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_product_detail.xml" value="0.22" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_register.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/activity_search.xml" value="0.16403508771929826" />
@@ -98,6 +99,7 @@
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/banner_item.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/btn_sheet_method_payment.xml" value="0.2" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/btn_sheet_toko.xml" value="0.33" />
+        <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/dialog_confirm_payment.xml" value="0.25" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/fragment_home.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/fragment_profile.xml" value="0.16403508771929826" />
         <entry key="..\:/Users/User/Documents/PROJECT SYNERGY ANDROID/homepoint/app/src/main/res/layout/item_address.xml" value="0.16403508771929826" />

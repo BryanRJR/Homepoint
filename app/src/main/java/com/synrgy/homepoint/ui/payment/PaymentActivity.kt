@@ -1,5 +1,6 @@
 package com.synrgy.homepoint.ui.payment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityPaymentBinding
 import com.synrgy.homepoint.ui.home.DataSource
+import com.synrgy.homepoint.ui.login.ForgetPassActivity
 
 class PaymentActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPaymentBinding
@@ -26,9 +28,8 @@ class PaymentActivity : AppCompatActivity() {
 
         setRecyclerViewOrder()
 
-
         // adding on click listener for our button.
-        binding.btnVoucher.setOnClickListener {
+        binding.filledTextShopLocation.setOnClickListener {
 
             val bottomSheetDialog = BottomSheetDialog(
                 this@PaymentActivity, R.style.BottomSheetDialogTheme
@@ -63,6 +64,11 @@ class PaymentActivity : AppCompatActivity() {
             }
             bottomSheetDialog.setContentView(bottomSheetView)
             bottomSheetDialog.show()
+        }
+
+        binding.btnPay.setOnClickListener {
+            val intent = Intent(this, ConfirmPaymentActivity::class.java)
+            startActivity(intent)
         }
     }
     private fun setRecyclerViewOrder(){
