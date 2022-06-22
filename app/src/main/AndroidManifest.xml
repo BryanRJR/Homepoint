@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homepoint">
         <activity
+            android:name=".ui.payment.PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.cart.CartActivity"
             android:exported="false" />
         <activity
@@ -20,12 +23,12 @@
             android:exported="false" />
         <activity
             android:name=".AddAddressActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ui.login.ForgetPassActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.payment.ConfirmPaymentActivity"
             android:exported="false" />
         <activity
             android:name=".EditProfileActivity"
@@ -43,8 +46,7 @@
             android:name=".ui.login.LoginActivity"
             android:exported="false" />
         <activity
-
-            android:name=".ui.payment.PaymentActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
