@@ -13,6 +13,9 @@
             android:name=".ui.payment.PaymentActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.cart.CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
@@ -20,7 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".AddAddressActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ui.login.ForgetPassActivity"
             android:exported="false" />
