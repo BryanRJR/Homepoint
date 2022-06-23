@@ -1,9 +1,11 @@
-package com.synrgy.homepoint
+package com.synrgy.homepoint.ui.profile.address
 
 import android.os.Bundle
 import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
+import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityAddAddressBinding
+import com.synrgy.homepoint.ui.profile.DropdownAdapter
 
 class AddAddressActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddAddressBinding

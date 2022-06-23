@@ -63,6 +63,12 @@
         <item name="android:paddingStart">12dp</item>
     </style>
 
+    <style name="Widget.HomePoint.TabItem" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textFontWeight" tools:targetApi="Q">400</item>
+    </style>
+
     <style name="Widget.HomePoint.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:textFontWeight" tools:targetApi="p">300</item>
         <item name="android:paddingStart">8dp</item>

@@ -6,9 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.synrgy.homepoint.EditProfileActivity
+import com.synrgy.homepoint.ui.profile.EditProfileActivity
 import com.synrgy.homepoint.R
-import com.synrgy.homepoint.ui.MainActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {

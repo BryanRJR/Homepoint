@@ -1,4 +1,4 @@
-package com.synrgy.homepoint
+package com.synrgy.homepoint.ui.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
