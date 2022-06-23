@@ -3,9 +3,11 @@ package com.synrgy.homepoint.data.remote.retrofit
 import com.synrgy.homepoint.data.remote.response.UserResponse
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
 
 interface ApiServices {
+    @FormUrlEncoded
     @POST("register")
     fun register(
             @Body regisRequest: RegisterRequest
