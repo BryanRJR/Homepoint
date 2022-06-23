@@ -3,6 +3,8 @@ package com.synrgy.homepoint.ui.home
 import com.synrgy.homepoint.R
 import com.synrgy.homepoint.data.local.model.OfferProduct
 import com.synrgy.homepoint.data.local.model.RecommendationProduct
+import com.synrgy.homepoint.ui.payment.Delivery
+import com.synrgy.homepoint.ui.payment.Order
 
 object DataSource {
     private val imageProduct = arrayOf(
@@ -45,5 +47,83 @@ object DataSource {
                 list.add(product)
             }
             return list
+        }
+
+    private val deliveryIcon =
+        arrayOf(
+            R.drawable.ic_truck_vector,
+            R.drawable.ic_drone_payment,
+            R.drawable.ic_packet_payment
+        )
+    private val deliveryTitle = arrayOf(
+        "Kurir reguler",
+        "Kurir homepoint",
+        "Ambil di tempat",
+    )
+    private val deliveryHarga = arrayOf(
+        "Rp25.000",
+        "Gratis",
+        "Gratis",
+    )
+
+    val listDataDelivery: ArrayList<Delivery>
+        get() {
+            val listDelivery = arrayListOf<Delivery>()
+            for (position in deliveryIcon.indices) {
+                val menu = Delivery()
+                menu.icon = deliveryIcon[position]
+                menu.title = deliveryTitle[position]
+                menu.harga = deliveryHarga[position]
+                listDelivery.add(menu)
+            }
+            return listDelivery
+        }
+
+
+    private val orderTotal = arrayOf(
+        "1x",
+        "1x",
+        "4x",
+    )
+    private val orderProduct = arrayOf(
+        "Penggorengan Elektronik tanpa minyak / Air Fryer 2.5 L / Microwave Ori",
+        "Non-Stick Cookware Set",
+        "Gelas Mug Keramik 300ml Hitam Polos",
+    )
+
+    private val orderPrice = arrayOf(
+        "Rp529.000",
+        "Rp115.000",
+        "Rp60.000",
+    )
+
+    private val orderCheckbox = arrayOf(
+        false,
+        false,
+        false,
+    )
+    private val tvAssurance = arrayOf(
+        "Tampilkan asuransi",
+        "Tampilkan asuransi",
+        "Tampilkan asuransi",
+    )
+    private val tvPriceAssurance = arrayOf(
+        "Rp100.000",
+        "Rp100.000",
+        "Rp100.000",
+    )
+
+
+    val listDataOrder: ArrayList<Order>
+        get() {
+            val listOrder = arrayListOf<Order>()
+            for (position in deliveryIcon.indices) {
+                val order = Order()
+                order.totalOrder = orderTotal[position]
+                order.productOrder = orderProduct[position]
+                order.priceOrder = orderPrice[position]
+                listOrder.add(order)
+            }
+            return listOrder
         }
 }
