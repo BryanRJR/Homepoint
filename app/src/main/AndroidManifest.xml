@@ -10,14 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homepoint">
         <activity
-            android:name=".RiwayatPesanActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".ui.order.RiwayatPesanActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.payment.PaymentActivity"
             android:exported="false" />
@@ -56,8 +50,12 @@
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
