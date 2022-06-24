@@ -3,7 +3,7 @@ package com.synrgy.homepoint.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.synrgy.homepoint.ProfileFragment
+import com.synrgy.homepoint.ui.profile.ProfileFragment
 import com.synrgy.homepoint.R
 import com.synrgy.homepoint.databinding.ActivityMainBinding
 import com.synrgy.homepoint.ui.home.HomeFragment

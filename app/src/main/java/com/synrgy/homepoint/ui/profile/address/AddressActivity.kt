@@ -1,7 +1,8 @@
-package com.synrgy.homepoint
+package com.synrgy.homepoint.ui.profile.address
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.synrgy.homepoint.R
 
 class AddressActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

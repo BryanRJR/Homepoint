@@ -1,4 +1,4 @@
-package com.synrgy.homepoint
+package com.synrgy.homepoint.ui.search
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

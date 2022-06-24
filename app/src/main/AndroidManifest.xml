@@ -10,19 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homepoint">
         <activity
+            android:name=".ui.order.RiwayatPesanActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.payment.PaymentActivity"
             android:exported="false" />
         <activity
             android:name=".ui.cart.CartActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchActivity"
+            android:name=".ui.search.SearchActivity"
             android:exported="false" />
         <activity
             android:name=".ui.detail.ProductDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".AddAddressActivity"
+            android:name=".ui.profile.address.AddAddressActivity"
             android:exported="false" />
         <activity
             android:name=".ui.login.ForgetPassActivity"
@@ -31,10 +34,10 @@
             android:name=".ui.payment.ConfirmPaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".EditProfileActivity"
+            android:name=".ui.profile.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".AddressActivity"
+            android:name=".ui.profile.address.AddressActivity"
             android:exported="false" />
         <activity
             android:name=".ui.splash.SplashActivity"
